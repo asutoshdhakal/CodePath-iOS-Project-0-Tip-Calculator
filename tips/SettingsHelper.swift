@@ -8,16 +8,20 @@
 
 import UIKit
 
-let defaultTipIndexKey = "default_tip_index"
-let defaults = NSUserDefaults.standardUserDefaults()
-
 class SettingsHelper {
+    // Use a struct with static fields as to not the pollute the global namespace
+    struct Constants {
+        static let defaultTipIndexKey = "default_tip_index"
+        
+        static let defaults = NSUserDefaults.standardUserDefaults()
+    }
+    
     class func setDefaultTipIndex(tipIndex: Int) {
-        defaults.setInteger(tipIndex, forKey: defaultTipIndexKey)
-        defaults.synchronize()
+        Constants.defaults.setInteger(tipIndex, forKey: Constants.defaultTipIndexKey)
+        Constants.defaults.synchronize()
     }
     
     class func getDefaultTipIndex() -> Int {
-        return defaults.integerForKey(defaultTipIndexKey)
+        return Constants.defaults.integerForKey(Constants.defaultTipIndexKey)
     }
 }
