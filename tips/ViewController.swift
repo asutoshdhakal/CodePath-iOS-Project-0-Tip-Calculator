@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let defaultTipIndexKey = "default_tip_index_key"
-    
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
@@ -18,10 +16,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let defaultTipIndex = defaults.integerForKey(defaultTipIndexKey)
-        tipControl.selectedSegmentIndex = defaultTipIndex
+
+        tipControl.selectedSegmentIndex = SettingsHelper.getDefaultTipIndex()
         onEditingChanged(tipControl)
     }
     

@@ -14,6 +14,7 @@
 		8A9BF8331A5D15BE00399DBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9BF8311A5D15BE00399DBA /* LaunchScreen.xib */; };
 		8A9BF83F1A5D15BE00399DBA /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BF83E1A5D15BE00399DBA /* tipsTests.swift */; };
 		8A9BF8491A5EEDC200399DBA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BF8481A5EEDC200399DBA /* SettingsViewController.swift */; };
+		8A9BF84C1A5F709F00399DBA /* SettingsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BF84B1A5F709F00399DBA /* SettingsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		8A9BF83D1A5D15BE00399DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9BF83E1A5D15BE00399DBA /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
 		8A9BF8481A5EEDC200399DBA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8A9BF84B1A5F709F00399DBA /* SettingsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				8A9BF82F1A5D15BE00399DBA /* Images.xcassets */,
 				8A9BF8311A5D15BE00399DBA /* LaunchScreen.xib */,
 				8A9BF8261A5D15BE00399DBA /* Supporting Files */,
+				8A9BF84B1A5F709F00399DBA /* SettingsHelper.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9BF84C1A5F709F00399DBA /* SettingsHelper.swift in Sources */,
 				8A9BF82B1A5D15BE00399DBA /* ViewController.swift in Sources */,
 				8A9BF8291A5D15BE00399DBA /* AppDelegate.swift in Sources */,
 				8A9BF8491A5EEDC200399DBA /* SettingsViewController.swift in Sources */,
