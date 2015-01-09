@@ -13,6 +13,7 @@
 		8A9BF8301A5D15BE00399DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9BF82F1A5D15BE00399DBA /* Images.xcassets */; };
 		8A9BF8331A5D15BE00399DBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9BF8311A5D15BE00399DBA /* LaunchScreen.xib */; };
 		8A9BF83F1A5D15BE00399DBA /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BF83E1A5D15BE00399DBA /* tipsTests.swift */; };
+		8A9BF8491A5EEDC200399DBA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BF8481A5EEDC200399DBA /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8A9BF8381A5D15BE00399DBA /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9BF83D1A5D15BE00399DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9BF83E1A5D15BE00399DBA /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		8A9BF8481A5EEDC200399DBA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,8 @@
 		8A9BF8251A5D15BE00399DBA /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				8A9BF84A1A5F65A400399DBA /* View Controllers */,
 				8A9BF8281A5D15BE00399DBA /* AppDelegate.swift */,
-				8A9BF82A1A5D15BE00399DBA /* ViewController.swift */,
 				8A9BF82C1A5D15BE00399DBA /* Main.storyboard */,
 				8A9BF82F1A5D15BE00399DBA /* Images.xcassets */,
 				8A9BF8311A5D15BE00399DBA /* LaunchScreen.xib */,
@@ -110,6 +112,15 @@
 				8A9BF83D1A5D15BE00399DBA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A9BF84A1A5F65A400399DBA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A9BF8481A5EEDC200399DBA /* SettingsViewController.swift */,
+				8A9BF82A1A5D15BE00399DBA /* ViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 			files = (
 				8A9BF82B1A5D15BE00399DBA /* ViewController.swift in Sources */,
 				8A9BF8291A5D15BE00399DBA /* AppDelegate.swift in Sources */,
+				8A9BF8491A5EEDC200399DBA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

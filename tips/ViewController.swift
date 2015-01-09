@@ -9,20 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let defaultTipIndexKey = "default_tip_index_key"
+    
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaultTipIndex = defaults.integerForKey(defaultTipIndexKey)
+        tipControl.selectedSegmentIndex = defaultTipIndex
+        onEditingChanged(tipControl)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
