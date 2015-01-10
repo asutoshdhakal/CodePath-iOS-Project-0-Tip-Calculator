@@ -25,14 +25,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
+        if let lastBillAmount = SettingsHelper.getLastBillAmount() {
+            billField.text = lastBillAmount
+        }
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
-        var tipPercentages = [0.18, 0.20, 0.22]
-        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        let billAmountString = billField.text as NSString
+        SettingsHelper.setLastBillAmount(billAmountString)
         
-        var billAmount = (billField.text as NSString).doubleValue
-        var tip = billAmount * tipPercentage
+        let tipPercentages = [0.18, 0.20, 0.22]
+        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        
+        let billAmount = billAmountString.doubleValue
+        let tip = billAmount * tipPercentage
         var total = billAmount + tip
         
         tipLabel.text = String(format: "$%.2f", tip)
