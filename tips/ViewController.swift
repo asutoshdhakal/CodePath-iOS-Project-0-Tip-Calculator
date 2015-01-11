@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    let currencyFormatter = NSNumberFormatter()
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -25,6 +27,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
+        currencyFormatter.locale = NSLocale.currentLocale()
+        currencyFormatter.numberStyle = .CurrencyStyle
         
         if let lastBillAmount = SettingsHelper.getLastBillAmount() {
             billField.text = lastBillAmount
@@ -42,8 +47,8 @@ class ViewController: UIViewController {
         let tip = billAmount * tipPercentage
         var total = billAmount + tip
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        tipLabel.text = currencyFormatter.stringFromNumber(tip)
+        totalLabel.text = currencyFormatter.stringFromNumber(total)
     }
     
     @IBAction func onTap(sender: AnyObject) {
