@@ -25,11 +25,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tipLabel.text = "$0.00"
-        totalLabel.text = "$0.00"
         
         currencyFormatter.locale = NSLocale.currentLocale()
         currencyFormatter.numberStyle = .CurrencyStyle
+        
+        tipLabel.text = currencyFormatter.stringFromNumber(0)
+        totalLabel.text = currencyFormatter.stringFromNumber(0)
         
         if let lastBillAmount = SettingsHelper.getLastBillAmount() {
             billField.text = lastBillAmount
