@@ -52,10 +52,20 @@ class ViewController: UIViewController {
         
         tipLabel.text = currencyFormatter.stringFromNumber(tip)
         totalLabel.text = currencyFormatter.stringFromNumber(total)
+        
+        fadeInTotal()
     }
     
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
+    }
+    
+    func fadeInTotal() {
+        self.totalLabel.alpha = 0
+        UIView.animateWithDuration(0.4, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn,
+            animations: {
+                self.totalLabel.alpha = 1
+            }, completion: nil )
     }
 }
 
