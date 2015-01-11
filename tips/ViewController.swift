@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         if let lastBillAmount = SettingsHelper.getLastBillAmount() {
             billField.text = lastBillAmount
         }
+        
+        // Makes it more obvious want the focus is on startup
+        billField.becomeFirstResponder()
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {

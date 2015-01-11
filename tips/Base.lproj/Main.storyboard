@@ -17,50 +17,46 @@
                                 <rect key="frame" x="21" y="83" width="88" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ebZ-63-YKa">
                                 <rect key="frame" x="21" y="140" width="24" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zuc-Hf-fbi">
-                                <rect key="frame" x="21" y="222" width="66" height="36"/>
+                                <rect key="frame" x="21" y="212" width="66" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1dS-tz-eJs">
                                 <rect key="frame" x="136" y="140" width="167" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tKd-Pn-YMo">
-                                <rect key="frame" x="136" y="222" width="167" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="616-Vf-pBb">
-                                <rect key="frame" x="21" y="195" width="282" height="9"/>
+                                <rect key="frame" x="22" y="176" width="282" height="7"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.059086963380000003" green="0.059086963380000003" blue="0.059086963380000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.98994848010000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.98994848010000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="kDL-si-hO0">
                                 <rect key="frame" x="18" y="287" width="282" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.061519148949999998" green="0.95415752229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <segments>
                                     <segment title="18%"/>
                                     <segment title="20%"/>
                                     <segment title="22%"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="4PG-qJ-HfJ"/>
                                 </connections>
@@ -68,14 +64,23 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="UGI-dF-7m1">
                                 <rect key="frame" x="206" y="74" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.061519148949999998" green="0.95415752229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Kpt-9L-cLf"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tKd-Pn-YMo">
+                                <rect key="frame" x="136" y="212" width="167" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.057634874361772281" green="0.18633077460579983" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="wak-9E-DS9" appends="YES" id="X1B-Oh-ojq"/>
@@ -116,23 +121,25 @@
                                 <rect key="frame" x="16" y="94" width="170" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="OHV-xJ-vNo">
                                 <rect key="frame" x="16" y="123" width="288" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.061519148949999998" green="0.95415752229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <segments>
                                     <segment title="18%"/>
                                     <segment title="20%"/>
                                     <segment title="22%"/>
                                 </segments>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onValueChanged:" destination="9tn-nF-aNu" eventType="valueChanged" id="IaL-FT-6GT"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.057634874359999998" green="0.1863307746" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Settings" id="WTa-Rs-Ien"/>
